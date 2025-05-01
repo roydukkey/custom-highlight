@@ -8,8 +8,8 @@ A set of lifecycle hooks for styling arbitrary text within elements using the [C
 ## Features
 
 * Highlight **single or multiple tokens** within an element, or patterns using a **regular expression**
-* Easily configure **case-insensitive** searching for tokens and pattern
-* Define **custom high groups** for target each group with unique styles
+* Easily configure **case-insensitive** searching for tokens and patterns
+* Define **custom highlight groups** for targeting each with unique styles
 * Deeply monitor changes to character data triggering an update to highlights
 
 ## Install

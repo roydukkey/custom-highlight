@@ -8,7 +8,7 @@ The following example illustrates this issue:
   <DeepBroken />
 </preview-container>
 
-In such causes, the **`deep` modifier** can be used to deeply track alterations to character data.
+In such causes, the **`deep`&nbsp;modifier** can be used to deeply track mutations to character data.
 
 ::: code-group
 

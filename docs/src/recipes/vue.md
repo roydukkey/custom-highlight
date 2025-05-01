@@ -1,6 +1,6 @@
 # Vue Directive Recipe
 
-`custom-highlight` was developed primarily for use within Vue, so it’s usage there couldn’t simpler. Just import the directive and add it to any element.
+Because `custom-highlight` is implemented as a [Custom Directive](https://vuejs.org/guide/reusability/custom-directives.html#directive-hooks), it’s use in Vue couldn’t be easier. Just import the directive and add it to any element.
 
 <<< ../examples/VueRecipe.vue#snippet
 

@@ -1,15 +1,15 @@
 # Lifecycle Hooks
 
-This library maintains symmetry with Vue’s [Custom Directive](https://vuejs.org/guide/reusability/custom-directives.html#directive-hooks) API but **does not depend on Vue**. These hooks receive the element on which they should be bound and details of the search.
+This library maintains symmetry with Vue’s [Custom Directive](https://vuejs.org/guide/reusability/custom-directives.html#directive-hooks) API but **does not depend on Vue**. These hooks receive the element on which they should be bound and details of the search to be preformed.
 
-All [Features](/features/basic-search) will be documented with examples written in Vue, but the these hooks should be robust enough to use in any other framework or context.
+All [features](/features/basic-search) will be documented with examples written in Vue, but the these hooks should be robust enough to use in any other framework or context.
 
 ## Hooks
 
 The default export of this package provides an object defining the following hooks:
 
 `created(element, binding)`
-: called before element's attributes are bound or event listeners are applied.
+: called before element’s attributes are bound or event listeners are applied.
 
 `beforeMount(element, binding)`
 : called right before the element is inserted into the DOM.
