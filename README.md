@@ -42,10 +42,10 @@ const element = document.getElementById('gettingStarted');
 const options = { value: 'brown fox' };
 
 if (element) {
-	CustomHighlight
-		.created(element, options)
-		.beforeMount(element, options)
-		.mounted(element, options);
+  CustomHighlight
+    .created(element, options)
+    .beforeMount(element, options)
+    .mounted(element, options);
 }
 </script>
 
