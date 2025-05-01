@@ -1,0 +1,4 @@
+# http://editorconfig.org
+
+[*.{vue,ts}]
+indent_style = space

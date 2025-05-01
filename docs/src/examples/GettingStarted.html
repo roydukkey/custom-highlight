@@ -1,0 +1,22 @@
+<p id="gettingStarted">The quick brown fox jumps over the lazy dog.</p>
+
+<script type="module">
+import CustomHighlight from 'custom-highlight';
+
+const element = document.getElementById('gettingStarted');
+const options = { value: 'brown fox' };
+
+if (element) {
+	CustomHighlight
+		.created(element, options)
+		.beforeMount(element, options)
+		.mounted(element, options);
+}
+</script>
+
+<style>
+  ::highlight(default) {
+    background-color: yellow;
+    color: black;
+  }
+</style>

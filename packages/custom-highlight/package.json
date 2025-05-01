@@ -1,0 +1,69 @@
+{
+	"//": [
+		"Several properties of this file will be derived from the project's root ",
+		"package.json when packing. This is done to avoid duplication and to ",
+		"help maintain symmetry between packages."
+	],
+	"name": "custom-highlight",
+	"version": "1.0.0",
+	"description": "A set of lifecycle hooks for styling arbitrary text within elements using the CSS Custom Highlight API",
+	"keywords": [
+		"css",
+		"custom highlight",
+		"find",
+		"lifecycle hooks",
+		"vue",
+		"directive"
+	],
+	"type": "module",
+	"main": "./dist/main.js",
+	"module": "./dist/main.js",
+	"unpkg": "./dist/main.iife.js",
+	"jsdelivr": "./dist/main.iife.js",
+	"types": "./dist/main.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/main.d.ts",
+			"import": "./dist/main.js"
+		},
+		"./package.json": "./package.json",
+		"./src/main.ts": "./src/main.ts"
+	},
+	"sideEffects": false,
+	"files": [
+		"/dist",
+		"/CHANGELOG.md",
+		"/LICENSE",
+		"/README.md"
+	],
+	"devDependencies": {
+		"@types/node": "catalog:",
+		"@vitest/coverage-v8": "catalog:",
+		"@vue/test-utils": "catalog:",
+		"@vue/tsconfig": "catalog:",
+		"escape-string-regexp": "catalog:",
+		"eslint": "catalog:",
+		"jsdom": "catalog:",
+		"type-fest": "catalog:",
+		"typescript": "catalog:",
+		"vite": "catalog:",
+		"vitest": "catalog:",
+		"vue": "catalog:"
+	},
+	"scripts": {
+		"clean": "del-cli ./dist",
+		"lint": "eslint './**/*.@(?(m|c)@(j|t)s|@(j|t)sx|vue)'",
+		"test": "vitest",
+		"build": "run-s clean build:*",
+		"build:src": "vite build",
+		"build:types": "tsc --project ./src/tsconfig.json",
+		"build:clean-types": "del-cli './dist/*/' './dist/*.d.ts' '!./dist/main.d.ts'",
+		"prepack": "clean-package",
+		"postpack": "clean-package restore",
+		"version": "conventional-changelog --preset conventionalcommits --infile ../../CHANGELOG.md --same-file",
+		"postversion": "run-s postversion:*",
+		"postversion:commit": "git add --all && git commit -m \"$(node -pe '`chore(release): v${process.env.npm_package_version}`')\"",
+		"postversion:tag": "git tag $(node -pe '`v${process.env.npm_package_version}`')",
+		"prepublishOnly": "pnpm version $(conventional-recommended-bump --preset conventionalcommits)"
+	}
+}

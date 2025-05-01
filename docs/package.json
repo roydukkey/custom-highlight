@@ -1,0 +1,30 @@
+{
+	"name": "docs",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=20.11.0"
+	},
+	"devDependencies": {
+		"@vue/tsconfig": "catalog:",
+		"@vueuse/core": "catalog:",
+		"autoprefixer": "catalog:",
+		"custom-highlight": "workspace:*",
+		"eslint-plugin-vue": "catalog:",
+		"markdown-it-deflist": "catalog:",
+		"sass": "catalog:",
+		"typescript": "catalog:",
+		"vite": "catalog:",
+		"vitepress": "catalog:",
+		"vue": "catalog:",
+		"vue-eslint-parser": "catalog:",
+		"web-features": "catalog:"
+	},
+	"scripts": {
+		"clean": "del-cli ./.vitepress/dist",
+		"lint": "eslint './**/*.@(?(m|c)@(j|t)s|@(j|t)sx|vue)'",
+		"dev": "vitepress dev --port 8051",
+		"build": "vitepress build",
+		"serve": "vitepress preview --port 8051"
+	}
+}

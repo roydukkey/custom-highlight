@@ -1,0 +1,58 @@
+{
+	"name": "root",
+	"private": true,
+	"keywords": [],
+	"author": {
+		"name": "roydukkey",
+		"email": "contact@changelog.me",
+		"url": "http://changelog.me"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://roydukkey@github.com/roydukkey/custom-highlight.git",
+		"branch": "master"
+	},
+	"homepage": "https://github.com/roydukkey/custom-highlight#readme",
+	"bugs": {
+		"url": "https://github.com/roydukkey/custom-highlight/issues"
+	},
+	"type": "module",
+	"engines": {
+		"node": ">=20.11.0 || >=22"
+	},
+	"packageManager": "pnpm@10.10.0",
+	"devDependencies": {
+		"@roydukkey/eslint-config": "catalog:",
+		"@tsconfig/node20": "catalog:",
+		"@tsconfig/strictest": "catalog:",
+		"@typescript-eslint/eslint-plugin": "catalog:",
+		"@typescript-eslint/parser": "catalog:",
+		"clean-package": "catalog:",
+		"conventional-changelog-cli": "catalog:",
+		"conventional-changelog-conventionalcommits": "catalog:",
+		"conventional-recommended-bump": "catalog:",
+		"cspell": "catalog:",
+		"del-cli": "catalog:",
+		"eslint": "catalog:",
+		"eslint-plugin-tsdoc": "catalog:",
+		"fs-extra": "catalog:",
+		"globals": "catalog:",
+		"npm-run-all2": "catalog:",
+		"typescript-eslint": "catalog:"
+	},
+	"scripts": {
+		"clean": "pnpm --recursive clean",
+		"lint": "run-s lint:* --continue-on-error",
+		"lint:spelling": "cspell lint --config './.vscode/cspell.json' --no-progress --show-context --relative '**'",
+		"lint:root": "eslint './*.@(?(m|c)@(j|t)s|@(j|t)sx|vue)'",
+		"lint:src": "pnpm --recursive lint",
+		"test": "pnpm --filter custom-highlight test",
+		"dev": "pnpm --filter docs dev",
+		"build": "pnpm --recursive build",
+		"build:docs": "pnpm --filter docs build",
+		"serve": "pnpm --filter docs serve",
+		"release": "run-s build release:publish",
+		"release:publish": "pnpm --filter custom-highlight publish"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"extends": [
+		"@tsconfig/strictest/tsconfig.json",
+		"@tsconfig/node20/tsconfig.json",
+	],
+	"include": [
+		"./**/*.ts",
+		"./**/*.d.ts",
+	],
+	"exclude": [
+		"./theme/index.ts"
+	]
+}

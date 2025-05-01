@@ -1,0 +1,32 @@
+{
+	"version": "0.2",
+	"ignorePaths": [
+		"node_modules",
+		".git",
+		"**/.DS_Store",
+		"*-lock.yaml",
+		"*.tgz"
+	],
+	"useGitignore": true,
+	"enableGlobDot": true,
+	"dictionaries": [
+		"cpp",
+		"css",
+		"npm"
+	],
+	// Before adding a words, see if there is already a dictionary in which it is contained: `pnpm dlx cspell trace '{{WORD}}'`
+	"words": [
+		"aeiou",
+		"conventionalcommits",
+		"dbaeumer",
+		"deflist",
+		"docsearch",
+		"infile",
+		"lifecycles",
+		"roydukkey",
+		"shikijs",
+		"tsdoc",
+		"vitepress",
+		"vueuse"
+	]
+}

@@ -1,0 +1,27 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Dependency Management
+node_modules
+*.tgz
+
+# Build Artifacts
+dist
+cache
+*.cache
+*.log
+
+# IDEs and Editors
+.vscode/*
+!.vscode/cspell.json
+!.vscode/extensions.json
+
+# User-specific files
+*.backup
+*.local
+*.user
+*.vs
+*.yml
+
+# System Files
+.DS_Store
+Thumbs.db

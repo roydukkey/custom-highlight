@@ -1,0 +1,18 @@
+{
+	"extends": [
+		"@tsconfig/strictest/tsconfig.json",
+		"@vue/tsconfig/tsconfig.json",
+	],
+	"compilerOptions": {
+		"noEmit": false,
+		"emitDeclarationOnly": true,
+		"declaration": true,
+		"declarationDir": "../dist",
+		"types": [
+			"vite/client",
+		],
+	},
+	"include": [
+		"./",
+	],
+}
