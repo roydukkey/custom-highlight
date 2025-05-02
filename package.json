@@ -52,7 +52,8 @@
 		"build": "pnpm --recursive build",
 		"build:docs": "pnpm --filter docs build",
 		"serve": "pnpm --filter docs serve",
-		"release": "run-s build release:publish",
-		"release:publish": "pnpm --filter custom-highlight publish"
+		"release:version": "pnpm --filter custom-highlight release:version",
+		"release:publish": "run-s build release:publish:*",
+		"release:publish:^1": "pnpm --filter custom-highlight publish"
 	}
 }

@@ -62,8 +62,8 @@
 		"postpack": "clean-package restore",
 		"version": "conventional-changelog --preset conventionalcommits --infile ../../CHANGELOG.md --same-file",
 		"postversion": "run-s postversion:*",
-		"postversion:commit": "git add --all && git commit -m \"$(node -pe '`chore(release): v${process.env.npm_package_version}`')\"",
-		"postversion:tag": "git tag $(node -pe '`v${process.env.npm_package_version}`')",
-		"prepublishOnly": "pnpm version $(conventional-recommended-bump --preset conventionalcommits)"
+		"postversion:^1": "git add --all && git commit -m \"$(node -pe '`chore(release): v${process.env.npm_package_version}`')\"",
+		"postversion:^2": "git tag $(node -pe '`v${process.env.npm_package_version}`')",
+		"release:version": "pnpm version $(conventional-recommended-bump --preset conventionalcommits)"
 	}
 }
