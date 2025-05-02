@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/roydukkey/custom-highlight/compare/v1.0.0...v1.0.1) (2025-05-02)
+
+### Fixes
+
+* initial release missing `./dist`
+
+
 ## 1.0.0 (2025-05-01)
 
 ### Features

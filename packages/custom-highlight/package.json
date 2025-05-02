@@ -5,7 +5,7 @@
 		"help maintain symmetry between packages."
 	],
 	"name": "custom-highlight",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A set of lifecycle hooks for styling arbitrary text within elements using the CSS Custom Highlight API",
 	"keywords": [
 		"css",
