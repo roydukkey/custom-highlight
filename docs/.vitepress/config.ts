@@ -2,6 +2,8 @@ import { defineConfig, mergeConfig } from 'vitepress';
 import autoprefixer from 'autoprefixer';
 // @ts-expect-error there are not typings for `markdown-it-deflist`
 import markdownDeflist from 'markdown-it-deflist';
+// @ts-expect-error i cannot figure out how to provide typings for the package.json
+import pkg from 'custom-highlight/package.json' with { type: 'json' };
 import type { UserConfig, UserConfigFn, DefaultTheme } from 'vitepress';
 
 const copyrightRange = [...new Set([2025, new Date().getFullYear()])].join('-');
@@ -25,6 +27,16 @@ const configInit: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
 				{ text: 'Getting Started', link: '/' },
 				{ text: 'Lifecycle Hooks', link: '/guide/lifecycle-hooks' },
 				{ text: 'Features', link: '/features/basic-search', activeMatch: '/features' },
+				{
+					// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+					text: pkg.version,
+					items: [
+						{
+							text: 'Changelog',
+							link: 'https://github.com/roydukkey/custom-highlight/blob/master/CHANGELOG.md',
+						},
+					],
+				},
 			],
 
 			footer: {
