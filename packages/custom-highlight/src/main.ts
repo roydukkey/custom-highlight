@@ -91,7 +91,7 @@ export interface Binding {
 		 */
 		i?: boolean;
 		/**
-		 * Enables a [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) to deeply monitor change to character data.
+		 * Enables a [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) to deeply monitor changes to character data.
 		 */
 		deep?: boolean;
 	};

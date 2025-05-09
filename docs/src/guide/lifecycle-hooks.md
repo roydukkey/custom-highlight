@@ -49,7 +49,7 @@ These are arguments are passed to each hooks:
     : enables case-insensitive searching for tokens and patterns
 
     `deep`
-    : enables a [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) to deeply monitor change to character data.
+    : enables a [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) to deeply monitor changes to character data.
 
 `updateBinding`
 : an object containing all the same options as `binding` and others
