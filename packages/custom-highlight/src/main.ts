@@ -13,7 +13,7 @@ export const isSupported = typeof Highlight === 'undefined';
  * @remarks
  * These hooks are symmetric to Vue's [Custom Directive](https://vuejs.org/guide/reusability/custom-directives.html#directive-hooks) API but do not depend on Vue itself.
  */
-/* v8 ignore next 5 */
+/* v8 ignore next 5 -- @preserve */
 export default (
 	isSupported && isClient
 		// @ts-expect-error this is to noop invocations of lifecycle hooks

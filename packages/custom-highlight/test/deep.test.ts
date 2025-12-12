@@ -69,8 +69,6 @@ test('after prop update, stop mutation observer', async ({ expect, basicComponen
 
 	expect(stopSpy).toBeCalledTimes(1);
 
-	// @ts-expect-error `vi.spyOn` typings are wrong for optional method
-	// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 	stopSpy.mockRestore();
 
 	wrapper.unmount();

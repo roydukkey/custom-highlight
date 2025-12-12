@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"engines": {
-		"node": ">=20.11.0"
+		"node": ">=20.19.0"
 	},
 	"devDependencies": {
 		"@vue/tsconfig": "catalog:",
@@ -12,7 +12,7 @@
 		"custom-highlight": "workspace:*",
 		"eslint-plugin-vue": "catalog:",
 		"markdown-it-deflist": "catalog:",
-		"sass": "catalog:",
+		"sass-embedded": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:",
 		"vitepress": "catalog:",

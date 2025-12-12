@@ -2,7 +2,6 @@ import { defineConfig, mergeConfig } from 'vitepress';
 import autoprefixer from 'autoprefixer';
 // @ts-expect-error there are not typings for `markdown-it-deflist`
 import markdownDeflist from 'markdown-it-deflist';
-// @ts-expect-error i cannot figure out how to provide typings for the package.json
 import pkg from 'custom-highlight/package.json' with { type: 'json' };
 import type { UserConfig, UserConfigFn, DefaultTheme } from 'vitepress';
 
@@ -11,7 +10,7 @@ const copyrightRange = [...new Set([2025, new Date().getFullYear()])].join('-');
 // https://vitepress.dev/reference/site-config
 const configInit: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
 	const sass = {
-		api: 'modern' as const,
+		api: 'modern-compiler' as const,
 		additionalData: `$MODE: '${mode}'\n`,
 	};
 
