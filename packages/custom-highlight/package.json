@@ -63,8 +63,8 @@
 		"version": "conventional-changelog --preset conventionalcommits --infile ../../CHANGELOG.md --same-file",
 		"postversion": "run-s postversion:*",
 		"postversion:^1": "echo \"Is the CHANGELOG correct? Press enter to continue...\" && read -p \"\" || :",
-		"postversions:^1": "git add --all && git commit -m \"$(node -pe '`chore(release): v${process.env.npm_package_version}`')\"",
-		"postversions:^2": "git tag $(node -pe '`v${process.env.npm_package_version}`')",
+		"postversion:^2": "git add --all && git commit -m \"$(node -pe '`chore(release): v${process.env.npm_package_version}`')\"",
+		"postversion:^3": "git tag $(node -pe '`v${process.env.npm_package_version}`')",
 		"release:version": "pnpm version $(conventional-recommended-bump --preset conventionalcommits)"
 	}
 }
