@@ -54,7 +54,7 @@ test('warn of duplicate token or pattern', ({ expect, basicComponent }) => {
 		},
 	});
 
-	expect(warnSpy).toBeCalledTimes(2);
+	expect(warnSpy).toHaveBeenCalledTimes(2);
 	expect(warnSpy).nthReturnedWith(1, '[custom-highlight]: Duplicate search token or pattern /the/.');
 	expect(warnSpy).nthReturnedWith(2, '[custom-highlight]: Duplicate search token or pattern \'the\'.');
 
@@ -79,7 +79,7 @@ test('warn but function with duplicate directive', ({ expect, basicComponent }) 
 		},
 	});
 
-	expect(warnSpy).toBeCalledTimes(1);
+	expect(warnSpy).toHaveBeenCalledTimes(1);
 	expect(warnSpy).nthReturnedWith(1, '[custom-highlight]: Duplicate search token or pattern \'the\'.');
 
 	warnSpy.mockRestore();
@@ -118,7 +118,7 @@ test('break for-loop, when Highlight is modified externally', ({ expect, basicCo
 	deleteSpy.mockClear();
 	wrapper.unmount();
 
-	expect(deleteSpy).toBeCalledTimes(1);
+	expect(deleteSpy).toHaveBeenCalledTimes(1);
 	expect(deleteSpy).nthCalledWith(1, keptRange);
 
 	deleteSpy.mockRestore();

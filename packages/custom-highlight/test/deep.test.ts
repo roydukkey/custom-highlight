@@ -24,7 +24,7 @@ test('after mutation, remove collapsed ranges', async ({ expect, deepComponent, 
 
 	await wrapper.find('button').trigger('click');
 
-	expect(collapseSpy).toBeCalledTimes(3);
+	expect(collapseSpy).toHaveBeenCalledTimes(3);
 	expect(collapseSpy).nthReturnedWith(1, true);
 	expect(collapseSpy).nthReturnedWith(2, true);
 	expect(collapseSpy).nthReturnedWith(3, false);
@@ -67,7 +67,7 @@ test('after prop update, stop mutation observer', async ({ expect, basicComponen
 		],
 	});
 
-	expect(stopSpy).toBeCalledTimes(1);
+	expect(stopSpy).toHaveBeenCalledTimes(1);
 
 	stopSpy.mockRestore();
 

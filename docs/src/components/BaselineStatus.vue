@@ -70,7 +70,7 @@
 
 import { computed, toRef } from 'vue';
 import { useWebStatus } from '../composables/useWebStatus.js';
-import type { features } from 'web-features';
+import type { browsers as Browsers } from 'web-features';
 
 interface Props {
 	featureId: string;
@@ -308,7 +308,7 @@ $chevron-padding-right: 1.25rem
 
 <script lang="ts">
 
-type BrowserIdentifier = keyof (typeof features)[keyof typeof features]['status']['support'];
+type BrowserIdentifier = keyof (typeof Browsers);
 
 interface BrowserGroup {
 	name: string;
