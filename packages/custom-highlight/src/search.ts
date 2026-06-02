@@ -44,14 +44,11 @@ const walkTree = function* (element: Node) {
 	const walker = document.createTreeWalker(element, 4); // 4 = NodeFilter.SHOW_TEXT
 
 	do {
-		if (isTextWithContent(walker.currentNode)) {
+		if (walker.currentNode instanceof Text) {
 			yield walker.currentNode;
 		}
 	} while (walker.nextNode());
 };
-
-const isTextWithContent = (node: Node): node is (Text & { textContent: string }) =>
-	node instanceof Text && node.textContent !== null;
 
 const createRange = (rangeStore: RangeStore, node: Node, customHighlightName: string, [start, end]: [number, number]) => {
 	const ranges = mapGetSafe(rangeStore, customHighlightName, defaultValueArray);

@@ -9,7 +9,8 @@
 			"vite/client",
 		],
 		"exactOptionalPropertyTypes": false,
-		"resolveJsonModule": true
+		"noUncheckedIndexedAccess": true,
+		"resolveJsonModule": true,
 	},
 	"include": [
 		"./**/*.ts",

@@ -14,7 +14,7 @@
 		"markdown-it-deflist": "catalog:",
 		"sass-embedded": "catalog:",
 		"typescript": "catalog:",
-		"vite": "^7.3.2",
+		"vite": "^7.3.3",
 		"vitepress": "catalog:",
 		"vue": "catalog:",
 		"vue-eslint-parser": "catalog:",
