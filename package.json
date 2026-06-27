@@ -21,7 +21,7 @@
 	"engines": {
 		"node": ">=22.22.2"
 	},
-	"packageManager": "pnpm@11.5.0",
+	"packageManager": "pnpm@11.9.0",
 	"devDependencies": {
 		"@roydukkey/eslint-config": "catalog:",
 		"@tsconfig/node22": "catalog:",

@@ -2,6 +2,8 @@ packages:
   - docs
   - packages/*
 
+minimumReleaseAge: 1440
+
 allowBuilds:
   esbuild: true
 
@@ -10,36 +12,36 @@ catalog:
   '@tsconfig/node22': ^22.0.5
   '@tsconfig/strictest': ^2.0.8
   '@types/node': ts5.8
-  '@typescript-eslint/eslint-plugin': ^8.60.0
-  '@typescript-eslint/parser': ^8.60.0
-  '@vitest/coverage-v8': ^4.1.7
-  '@vue/test-utils': ^2.4.10
+  '@typescript-eslint/eslint-plugin': ^8.62.0
+  '@typescript-eslint/parser': ^8.62.0
+  '@vitest/coverage-v8': ^4.1.9
+  '@vue/test-utils': ^2.4.11
   '@vue/tsconfig': ^0.9.1
   '@vueuse/core': ^14.3.0
-  autoprefixer: ^10.5.0
+  autoprefixer: ^10.5.2
   clean-package: ^2.2.0
-  conventional-changelog: ^7.2.0
-  conventional-changelog-conventionalcommits: ^9.3.1
-  conventional-recommended-bump: ^11.2.0
-  cspell: ^10.0.0
+  conventional-changelog: ^8.0.0
+  conventional-changelog-conventionalcommits: ^10.2.0
+  conventional-recommended-bump: ^12.0.0
+  cspell: ^10.0.1
   del-cli: ^7.0.0
   escape-string-regexp: ^5.0.0
   eslint: ^9.39.4
   eslint-plugin-tsdoc: ^0.5.2
-  eslint-plugin-vue: ^10.9.1
+  eslint-plugin-vue: ^10.9.2
   fs-extra: ^11.3.5
-  globals: ^17.6.0
+  globals: ^17.7.0
   jsdom: ^29.1.1
   markdown-it-deflist: ^3.0.1
-  npm-run-all2: ^9.0.1
+  npm-run-all2: ^9.0.2
   sass-embedded: ^1.100.0
-  type-fest: ^5.6.0
+  type-fest: ^5.7.0
   typescript: ~5.9.3
-  typescript-eslint: ^8.60.0
-  vite: ^8.0.14
+  typescript-eslint: ^8.62.0
+  vite: ^8.1.0
   vite-svg-loader: ^5.1.1
   vitepress: 2.0.0-alpha.17
-  vitest: ^4.1.8
-  vue: ^3.5.35
-  vue-eslint-parser: ^10.4.0
-  web-features: ^3.29.0
+  vitest: ^4.1.9
+  vue: ^3.5.39
+  vue-eslint-parser: ^10.4.1
+  web-features: ^3.32.0
