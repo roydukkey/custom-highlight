@@ -7,7 +7,7 @@ allowBuilds:
 
 catalog:
   '@roydukkey/eslint-config': ^4.0.3
-  '@tsconfig/node20': ^20.1.9
+  '@tsconfig/node22': ^22.0.5
   '@tsconfig/strictest': ^2.0.8
   '@types/node': ts5.8
   '@typescript-eslint/eslint-plugin': ^8.60.0
