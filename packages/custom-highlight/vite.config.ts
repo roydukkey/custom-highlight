@@ -14,9 +14,12 @@ export default defineConfig(({ mode }) => {
 				fileName: 'main',
 				formats: ['es', 'iife'],
 			},
-			rollupOptions: {
+			rolldownOptions: {
 				output: {
 					exports: 'named',
+				},
+				experimental: {
+					attachDebugInfo: 'none',
 				},
 			},
 		},
