@@ -60,3 +60,7 @@ if (element) {
 This works just fine in a static webpage, but frameworks that dynamically render content by manipulating the DOM (e.g. Vue, React, Svelte, etc.) will require additional effort in conforming to their component lifecycles.
 
 See the [docs](https://custom-highlight.pages.dev/) for examples and recipes using [Vue](https://custom-highlight.pages.dev/recipes/vue.html) and native [Web Components](https://custom-highlight.pages.dev/recipes/web-component.html).
+
+## Contribution
+
+See [Contributing Guide](https://github.com/roydukkey/custom-highlight/blob/master/CONTRIBUTING.md).
